@@ -1,0 +1,14 @@
+
+{
+    "telegram": {
+        "enabled": true,
+        "token": "6274214394:AAHROX4_LiCzZR3P3WEC8b5YWDYX7deqMMA",
+        "chat_id": "5502263851",
+        "keyboard": [
+            ["/daily", "/status table", "/profit"],
+            ["/performance","/stats","/health"],
+            ["/count","/balance", "/help"]
+        ]
+    },
+    "bot_name": "NFIX2"
+}

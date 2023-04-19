@@ -1,0 +1,42 @@
+
+{
+    "telegram": {
+        "enabled": true,
+        "token": "6267072553:AAE9fneI1wF35jF3_tU7xg3ktBt88i_Dbn0",
+        "chat_id": "5502263851",
+        "keyboard": [
+            ["/daily", "/status table", "/profit"],
+            ["/performance","/stats","/health"],
+            ["/count","/balance", "/help"]
+        ]
+    },
+    "discord": {
+        "enabled": true,
+        "webhook_url": "https://discord.com/api/webhooks/1090137237162823762/QJUrJQC6gV3XFo7FGOJeKGWlNgMsOE9fJS4QJSQurO0D4UVEUUl7Xv1hIBOeJo4ylgaM",
+        "exit_fill": [
+            {"Pair": "{pair}"},
+            {"Direction": "{direction}"},
+            {"Open rate": "{open_rate}"},
+            {"Close rate": "{close_rate}"},
+            {"Amount": "{amount}"},
+            {"Open date": "{open_date:%Y-%m-%d %H:%M:%S}"},
+            {"Close date": "{close_date:%Y-%m-%d %H:%M:%S}"},
+            {"Profit": "{profit_amount} {stake_currency}"},
+            {"Profitability": "{profit_ratio:.2%}"},
+            {"Enter tag": "{enter_tag}"},
+            {"Exit Reason": "{exit_reason}"},
+            {"Strategy": "{strategy}"},
+            {"Timeframe": "{timeframe}"}
+        ],
+        "entry_fill": [
+            {"Trade ID": "{trade_id}"},
+            {"Pair": "{pair}"},
+            {"Direction": "{direction}"},
+            {"Open rate": "{open_rate}"},
+            {"Amount": "{amount}"},
+            {"Enter tag": "{enter_tag}"},
+            {"Strategy": "{strategy} {timeframe}"}
+        ]
+    },
+    "bot_name": "KCRSIMACD_1h"
+}

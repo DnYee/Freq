@@ -1,0 +1,8 @@
+
+{
+    "add_config_files": [
+        "common.json",
+        "run_pairlist.json",
+        "NFIX2_private.json"
+    ]
+}

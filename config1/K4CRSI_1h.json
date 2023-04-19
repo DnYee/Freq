@@ -1,0 +1,7 @@
+{
+    "add_config_files": [
+        "common.json",
+        "run_pairlist.json",
+        "K4CRSI_1h_private.json"
+    ]    
+}

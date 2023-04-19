@@ -1,0 +1,14 @@
+
+{
+    "telegram": {
+        "enabled": true,
+        "token": "6188843034:AAFQQA2vxrWX8ZPyN6hjh4P_uPgN8Z0af7A",
+        "chat_id": "5502263851",
+        "keyboard": [
+            ["/daily", "/status table", "/profit"],
+            ["/performance","/stats","/health"],
+            ["/count","/balance", "/help"]
+        ]
+    },
+    "bot_name": "K4CRSI_1h"
+}
