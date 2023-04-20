@@ -1,0 +1,7 @@
+
+{
+    "add_config_files": [
+        "backtest_base.json",
+        "backtest_future.json"
+    ]
+}

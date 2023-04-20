@@ -1,0 +1,148 @@
+{
+    "max_open_trades": -1,
+    "stake_currency": "USDT",
+    "stake_amount": 100,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 1000,
+    "trading_mode": "spot",
+    "unfilledtimeout": {
+        "entry": 20,
+        "exit": 40
+    },
+    "entry_pricing": {
+        "price_side" : "ask",
+        "price_last_balance": 0.0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": true,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side" : "bid",
+        "use_order_book": true,
+        "order_book_min": 1,
+        "order_book_max": 1
+    },
+    "exchange": {
+        "name": "binance",
+        "sandbox": false,
+        "key": "",
+        "secret": "",
+        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_async_config": {
+            "enableRateLimit": false,
+            "rateLimit": 500
+        },
+        "pair_whitelist":["BTC/USDT",
+        "IMX/USDT",
+        "APT/USDT",
+        "CELR/USDT",
+        "BCH/USDT",
+        "OP/USDT",
+        "ETH/USDT",
+        "XRP/USDT",
+        "MKR/USDT",
+        "DYDX/USDT",
+        "GMT/USDT",
+        "MANA/USDT",
+        "CRV/USDT",
+        "ETC/USDT",
+        "NEO/USDT",
+        "MAGIC/USDT",
+        "XLM/USDT",
+        "FTM/USDT",
+        "REN/USDT",
+        "ADA/USDT",
+        "DOGE/USDT",
+        "MATIC/USDT",
+        "SAND/USDT",
+        "TRX/USDT",
+        "MASK/USDT",
+        "GTC/USDT",
+        "AGIX/USDT",
+        "ATOM/USDT",
+        "APE/USDT",
+        "HOOK/USDT"],
+        "pair_blacklist": [
+            "GBP/USDT", "EUR/USDT", "BUSD/USDT", "USDC/USDT"
+        ]
+    },
+
+    "pairlists": [
+    {
+        "method": "StaticPairList"
+    }
+    ],
+
+    "protections": [
+    {
+        "method": "CooldownPeriod",
+        "stop_duration_candles": 1
+    },
+    {
+        "method": "StoplossGuard",
+        "lookback_period_candles": 6,
+        "trade_limit": 2,
+        "stop_duration_candles": 1440,
+        "only_per_pair": true
+    },
+    {
+        "method": "LowProfitPairs",
+        "lookback_period_candles": 3,
+        "trade_limit": 2,
+        "stop_duration_candles": 4,
+        "required_profit": 0.015
+    },
+    {
+        "method": "LowProfitPairs",
+        "lookback_period_candles": 24,
+        "trade_limit": 3,
+        "stop_duration_candles": 12,
+        "required_profit": 0.01
+    }
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 10,
+        "allowed_risk": 0.02,
+        "stoploss_range_min": -0.01,
+        "stoploss_range_max": -0.3,
+        "stoploss_range_step": -0.01,
+        "minimum_winrate": 0.60,
+        "minimum_expectancy": 0.20,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "d1760fd40d708388c7a19bc9cdd792240a66ebe33075012799d2e7129caca41f",
+        "ws_token": "25OsEJjnlFtCnH-ZtFUHldfg5LBwwA0Nqg",
+        "CORS_origins": ["http://localhost:8080"],
+        "username": "freqtrader",
+        "password": "111111"
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "",
+        "chat_id": "5502263851"
+    },
+    "initial_state": "running",
+    "force_entry_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+    // "db_url": "sqlite:///cryptofrog.sqlite",
+    // "user_data_dir" : "user_data",
+    // "strategy": "CryptoFrog",
+    // "strategy_path": "user_data/strategies"
+}

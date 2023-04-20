@@ -1,0 +1,131 @@
+
+{
+    "exchange": {
+        "name": "binance",
+        "key": "key",
+        "secret": "secret",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": ["HOT/USDT:USDT"
+        ,"AGIX/USDT:USDT"
+        ,"TOMO/USDT:USDT"
+        ,"ZEC/USDT:USDT"
+        ,"LRC/USDT:USDT"
+        ,"TRU/USDT:USDT"
+        ,"AXS/USDT:USDT"
+        ,"LIT/USDT:USDT"
+        ,"SAND/USDT:USDT"
+        ,"LINA/USDT:USDT"
+        ,"MAGIC/USDT:USDT"
+        ,"SXP/USDT:USDT"
+        ,"NEO/USDT:USDT"
+        ,"FOOTBALL/USDT:USDT"
+        ,"OCEAN/USDT:USDT"
+        ,"ANKR/USDT:USDT" 
+        ,"AUDIO/USDT:USDT"
+        ,"ZRX/USDT:USDT"
+        ,"MKR/USDT:USDT"
+        ,"CFX/USDT:USDT"
+        ,"XMR/USDT:USDT"
+        ,"LUNA2/USDT:USDT"
+        ,"MASK/USDT:USDT"
+        ,"ATA/USDT:USDT"
+        ,"IMX/USDT:USDT"
+        ,"GALA/USDT:USDT"
+        ,"STORJ/USDT:USDT"
+        ,"KNC/USDT:USDT"
+        ,"WAVES/USDT:USDT"
+        ,"UNI/USDT:USDT"
+        ,"ETC/USDT:USDT"
+        //,"ARB/USDT:USDT"
+        ,"AAVE/USDT:USDT"
+        ,"SOL/USDT:USDT"
+        ,"SFP/USDT:USDT"
+        ,"ENJ/USDT:USDT"
+        //,"ID/USDT:USDT"
+        ,"XEM/USDT:USDT"
+        ,"BCH/USDT:USDT"
+        ,"APT/USDT:USDT"
+        ,"CELO/USDT:USDT"
+        ,"JASMY/USDT:USDT"
+        ,"DOT/USDT:USDT"
+        ,"STMX/USDT:USDT"
+        ,"ONT/USDT:USDT"
+        ,"SUSHI/USDT:USDT"
+        ,"QTUM/USDT:USDT"
+        ,"ACH/USDT:USDT"
+        ,"UNFI/USDT:USDT"
+        ,"MATIC/USDT:USDT"
+        ,"FLOW/USDT:USDT"
+        ,"LINK/USDT:USDT"
+        ,"IOST/USDT:USDT"
+        ,"RSR/USDT:USDT"
+        ,"CHR/USDT:USDT"
+        ,"LDO/USDT:USDT"
+        ,"DYDX/USDT:USDT"
+        ,"ADA/USDT:USDT"
+        ,"PEOPLE/USDT:USDT"
+        //,"JOE/USDT:USDT"
+        ,"ZIL/USDT:USDT"
+        ,"AVAX/USDT:USDT"
+        ,"TRX/USDT:USDT"
+        ,"FET/USDT:USDT"
+        ,"ATOM/USDT:USDT"
+        ,"VET/USDT:USDT"
+        ,"BTC/USDT:USDT"
+        ,"STX/USDT:USDT"
+        ,"ETH/USDT:USDT"
+        ,"SSV/USDT:USDT"
+        ,"KLAY/USDT:USDT"
+        ,"OP/USDT:USDT"
+        ,"ICX/USDT:USDT"
+        ,"BAT/USDT:USDT"
+        ,"DOGE/USDT:USDT"
+        ,"C98/USDT:USDT"
+        ,"CRV/USDT:USDT"
+        ,"NEAR/USDT:USDT"
+        ,"FIL/USDT:USDT"
+        ,"SNX/USDT:USDT"
+        ,"XRP/USDT:USDT"
+        ,"LTC/USDT:USDT"
+        ,"1000SHIB/USDT:USDT"
+        ,"INJ/USDT:USDT"
+        ,"EOS/USDT:USDT"
+        ,"MANA/USDT:USDT"
+        ,"1000LUNC/USDT:USDT"
+        ,"FTM/USDT:USDT"
+        ,"GMT/USDT:USDT"
+        ,"APE/USDT:USDT"
+        ,"LQTY/USDT:USDT"
+        ,"ARPA/USDT:USDT"
+        ,"XLM/USDT:USDT"
+        ,"COTI/USDT:USDT"
+        ,"GRT/USDT:USDT"
+        ,"GMX/USDT:USDT"
+        ,"REN/USDT:USDT"
+        ,"IOTA/USDT:USDT"
+        ,"COCOS/USDT:USDT"
+        ,"BEL/USDT:USDT"
+        ],
+        "pair_blacklist": [
+            // Exchange
+            "(BNB)/.*",
+            // Leverage
+            ".*(_PREMIUM|BEAR|BULL|HALF|HEDGE|UP|DOWN|[1235][SL])/.*",
+            // Fiat
+            "(AUD|BRZ|CAD|CHF|EUR|GBP|HKD|IDRT|JPY|NGN|RUB|SGD|TRY|UAH|USD|ZAR)/.*",
+            // Stable
+            "(BUSD|CUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDN|USDP|USDT|VAI|UST|USTC|AUSD)/.*",
+            // FAN
+            "(ACM|AFA|ALA|ALL|ALPINE|APL|ASR|ATM|BAR|CAI|CHZ|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
+            // Others
+            "(1EARTH|ILA|BOBA|CTXC|CWAR|HBAR|NMR|OMG|ONG|ARDR|DMTR|MLS|TORN|LUNA|BTS|QKC|COS|ACA|FTT|SRM|YFII|SNM|BNX|ANC|AION|MIR|BNX|STG|HNT|WABI)/.*"
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+    ]
+}
+

@@ -1,0 +1,155 @@
+{
+    "dry_run": true,
+    "dry_run_wallet": 1000,
+    "max_open_trades": 5,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "tradable_balance_ratio": 1,
+    "fiat_display_currency": "USD",
+    "cancel_open_orders_on_exit": false,
+    "forcebuy_enable": false,
+    "trading_mode": "spot",
+    "margin_mode": "isolated",
+    "unfilledtimeout": {
+        "entry": 10,
+        "exit": 30
+    },
+    "entry_pricing": {
+        "price_side": "ask",
+        "ask_last_balance": 0.0,
+        "use_order_book": false,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "bid",
+        "use_order_book": false,
+        "order_book_min": 1,
+        "order_book_max": 1,
+        "use_exit_signal": true,
+        "exit_profit_only": false,
+        "ignore_roi_if_entry_signal": false,
+        "ignore_buying_expired_candle_after": 600
+    },
+    "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "force_exit": "limit",
+        "emergency_exit": "limit",
+        "stoploss": "limit",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60
+    },
+    "download_trades": true,
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 3100
+        },
+        "pair_whitelist": ["BTC/USDT",
+        "IMX/USDT",
+        "APT/USDT",
+        "CELR/USDT",
+        "BCH/USDT",
+        "OP/USDT",
+        "ETH/USDT",
+        "XRP/USDT",
+        "MKR/USDT",
+        "DYDX/USDT",
+        "GMT/USDT",
+        "MANA/USDT",
+        "CRV/USDT",
+        "ETC/USDT",
+        "NEO/USDT",
+        "MAGIC/USDT",
+        "XLM/USDT",
+        "FTM/USDT",
+        "REN/USDT",
+        "ADA/USDT",
+        "DOGE/USDT",
+        "MATIC/USDT",
+        "SAND/USDT",
+        "TRX/USDT",
+        "MASK/USDT",
+        "GTC/USDT",
+        "AGIX/USDT",
+        "ATOM/USDT",
+        "APE/USDT",
+        "HOOK/USDT"
+        ],
+        "pair_blacklist": ["BNB/BTC",
+        "BNB/BUSD",
+        "BNB/ETH",
+        "BNB/EUR",
+        "BNB/NGN",
+        "BNB/PAX",
+        "BNB/RUB",
+        "BNB/TRY",
+        "BNB/TUSD",
+        "BNB/USDC",
+        "BNB/USDS",
+        "TUSD/USDT",
+        "USDC/USDT",
+        "USDS/USDT",
+        "BUSD/USDT",
+        "EUR/USDT",
+        "GBP/USDT",
+        "BNB/USDT",
+        ".*UP/USDT",
+        ".*DOWN/USDT",
+        ".*BEAR/USDT",
+        ".*BULL/USDT",
+            "EUR/.*",
+            "GBP/.*",
+            "AUD/.*"
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }
+        ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "stoploss_range_min": -0.01,
+        "stoploss_range_max": -0.1,
+        "stoploss_range_step": -0.01,
+        "minimum_winrate": 0.60,
+        "minimum_expectancy": 0.20,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "",
+        "chat_id": "5502263851"
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "d1760fd40d708388c7a19bc9cdd792240a66ebe33075012799d2e7129caca41f",
+        "ws_token": "25OsEJjnlFtCnH-ZtFUHldfg5LBwwA0Nqg",
+        "CORS_origins": ["http://localhost:8080"],
+        "username": "freqtrader",
+        "password": "111111"
+    },
+    "bot_name": "ICMK_ZEMA",
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}
