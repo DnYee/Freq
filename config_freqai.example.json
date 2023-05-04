@@ -49,10 +49,12 @@
     "freqai": {
         "enabled": true,
         "purge_old_models": 2,
-        "train_period_days": 15,
+        "train_period_days": 30,
         "backtest_period_days": 7,
-        "live_retrain_hours": 0,
+        "save_backtest_models":true,
+        "live_retrain_hours": 1,
         "identifier": "uniqe-id",
+        "continual_learning":true,
         "feature_parameters": {
             "include_timeframes": [
                 "3m",
@@ -60,8 +62,7 @@
                 "1h"
             ],
             "include_corr_pairlist": [
-                "BTC/USDT:USDT",
-                "ETH/USDT:USDT"
+                "BTC/USDT:USDT"
             ],
             "label_period_candles": 20,
             "include_shifted_candles": 2,
@@ -88,3 +89,28 @@
         "process_throttle_secs": 5
     }
 }
+
+
+// Using docker, you can do it on few minutes.
+// This is a docker compose file:
+
+
+// version: '3'
+// services:
+//   tenserboard:
+//     image: volnet/tensorflow-tensorboard
+//     restart: unless-stopped
+//     container_name: tenserboard
+//     ports:
+      
+// "0.0.0.0:6006:6006"
+//   volumes:
+// "/home/sam/workfolder/user_data/models:/logs"
+// command: tensorboard --logdir /logs
+
+
+// 0.0.0.0 should be 127.0.0.1 or localhost if you want to expose locally
+// Volumes: The first part is the path of your models folder
+
+// Just run : docker compose up tenserboard -d
+// Then you can access the portal on 127.0.0.0:6006 
