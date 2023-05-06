@@ -1,0 +1,8 @@
+
+{
+    "add_config_files": [
+        "backtest_base_ai.json",
+        "backtest_ai_model.json",
+        "backtest_list_ai.json"
+    ]
+}

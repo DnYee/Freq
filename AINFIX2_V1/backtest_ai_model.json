@@ -1,0 +1,42 @@
+
+{
+    "freqai": {
+        "enabled": true,
+        "purge_old_models": 2,
+        "train_period_days": 30,
+        "backtest_period_days": 7,
+        "save_backtest_models":true,
+        "live_retrain_hours": 1,
+        "identifier": "NFIX2_V1_TEST",
+        "continual_learning":true,
+        "feature_parameters": {
+            "include_timeframes": [
+                "15m",
+                "1h",
+                "4h"
+            ],
+            "include_corr_pairlist": [
+                "BTC/USDT:USDT"
+            ],
+            "label_period_candles": 20,
+            "include_shifted_candles": 0,
+            "DI_threshold": 0.9,
+            "weight_factor": 0.9,
+            "principal_component_analysis": false,
+            "use_SVM_to_remove_outliers": true,
+            "indicator_periods_candles": [
+                12,
+                24,
+                36,
+                48
+            ],
+            "plot_feature_importances": 100
+        },
+        "data_split_parameters": {
+            "test_size": 0.33,
+            "random_state": 1
+        },
+        "model_training_parameters": {"metric_period":100,
+        "early_stopping_rounds":200}
+    }
+}
